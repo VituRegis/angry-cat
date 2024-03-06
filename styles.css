@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    background-color: #332936;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #7E00D1;
+}
+
+nav {
+    display: flex;
+    color: #3CD3F1;
+    flex-direction: row; 
+
+    flex-wrap: nowrap;
+}
+
+ul{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li{
+    display: inline;
+    margin-left: 2em;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+  }
+
+#logo {
+    display: flex;
+    color: #3CD3F1;
+}
+
+#icon{
+    height: 5em;
+}
+
+#nomeSite{
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    font-style: normal;
+
+    align-self: center;
+    flex-shrink: 0;
+}
+
+.links{
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 700px) {
+    li{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5em;
+        margin-top: 0.5em;
+    }
+
+    nav {
+        flex-direction: column; 
+    }
+
+    #div_links{
+        display: flex;
+        flex-direction: column;
+
+        align-self: flex-end;
+        margin-left: 1em;
+    }
+}
+  
